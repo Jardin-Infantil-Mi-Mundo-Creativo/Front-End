@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import "./Informacion.css"
 import { Link } from 'react-router-dom'
 import { ClipboardMinus, Envelope, Facebook, GeoAlt, Telephone, Whatsapp } from 'react-bootstrap-icons'
@@ -9,13 +9,21 @@ import img_3 from "../../assets/img_3.jpg"
 import img_4 from "../../assets/img_4.jpg"
 import img_5 from "../../assets/img_5.jpg"
 import img_6 from "../../assets/img_6.jpg"
+import img_7 from "../../assets/img_7.jpg"
+import img_8 from "../../assets/img_8.jpg"
+import img_9 from "../../assets/img_9.jpg"
+import img_10 from "../../assets/img_10.jpg"
+import img_11 from "../../assets/img_11.jpg"
+import img_12 from "../../assets/img_12.jpg"
+import img_13 from "../../assets/img_13.jpg"
+import img_14 from "../../assets/img_14.jpg"
 import ValoresAgregados from '../ValoresAgregados/ValoresAgregados'
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 export default function Informacion() {
 
-    const images = [img_1, img_2, img_3, img_4, img_5, img_6];
+    const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10, img_11, img_12, img_13, img_14];
     const [selectedIndex, setSelectIndex] = useState(0);
     const [selectedImage, setSelectImage] = useState(images[0]);
 

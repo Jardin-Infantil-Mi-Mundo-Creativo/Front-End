@@ -5,6 +5,7 @@ import Aspirantes from './pages/Aspirantes/Aspirantes';
 import Servicios from './pages/Servicios/Servicios';
 import Estudiantes from './pages/Estudiantes/Estudiantes';
 import Nosotros from './pages/Nosotros/Nosotros';
+import Galeria from './pages/galeria/galeria';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/nosotros" element={<Nosotros/>} />
           <Route path="/servicios" element={<Servicios/>}/>
           <Route path="/aspirantes" element={<Aspirantes/>}/>
+          <Route path="/galeria" element={<Galeria/>}/>
           <Route path="/estudiantes" element={<Estudiantes/>}/>
         </Routes>
       </HashRouter>

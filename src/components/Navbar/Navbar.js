@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from "../../assets/logo.svg"
 import "./Navbar.css"
-import { House, People, BrightnessAltHigh, ClipboardMinus, Journal, List } from 'react-bootstrap-icons';
+import { House, People, BrightnessAltHigh, ClipboardMinus, Journal, List, Images } from 'react-bootstrap-icons';
 import { motion } from 'framer-motion'
 
 export default class Navbar extends Component {
@@ -54,6 +54,15 @@ export default class Navbar extends Component {
             className='navbar-container-list-element-container'>
               <Link to="/nosotros"><People className='navbar-container-list-element-icon'/></Link>
               <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/nosotros">Nosotros</Link></li>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity:0}}
+            animate={{ opacity:1 }}
+            transition={{ duration:0.4, delay:0.84}}
+            className='navbar-container-list-element-container'>
+              <Link to="/galeria"><Images className='navbar-container-list-element-icon'/></Link>
+              <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/nosotros">Galeria</Link></li>
           </motion.div>
 
           <motion.div
